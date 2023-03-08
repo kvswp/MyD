@@ -1,0 +1,12 @@
+FROM ubuntu:latest
+WORKDIR myspace
+#ADD
+RUN apt-get -y update
+RUN apt-get -y install openjdk-11-jdk wget
+RUN mkdir /opt/tomcat
+#ADD apache-tomcat-8.5.87.tar.gz /myspace
+#RUN mv /myspace/apache-tomcat-8.5.87/* /opt/tomcat
+#COPY sample.war /opt/tomcat/webapps
+#COPY cs144.war /opt/tomcat/webapps
+#EXPOSE 8080
+#ENTRYPOINT ["/opt/tomcat/bin/catalina.sh", "run"]
